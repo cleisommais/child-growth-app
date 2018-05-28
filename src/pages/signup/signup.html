@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        Signup
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding id="page">
+    <form id="signup-form" id="user">
+      <ion-list id="signup-list2">
+        <ion-item id="signup-input">
+          <ion-label>
+            First Name
+          </ion-label>
+          <ion-input type="text" id="firstName" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="signup-input2">
+            <ion-label>
+              Last Name
+            </ion-label>
+            <ion-input type="text" id="lastName" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="signup-input3">
+          <ion-label>
+            Email
+          </ion-label>
+          <ion-input type="email" id="email" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="signup-input5">
+            <ion-label>
+              Password
+            </ion-label>
+            <ion-input type="password" id="password" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="signup-input5">
+            <ion-label>
+              Confirm Password
+            </ion-label>
+            <ion-input type="password" id="password2" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="signup-input4">
+            <ion-label>
+              Phone number
+            </ion-label>
+            <ion-input type="text" id="phoneNumber" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="signup-input5">
+            <ion-label>
+              Date birth
+            </ion-label>
+            <ion-datetime displayFormat="MM/DD/YYYY" id="myDate"></ion-datetime>
+        </ion-item>
+        <ion-item id="signup-input6">
+            <ion-label>
+              Gender
+            </ion-label>
+            <ion-select id="gender">
+                <ion-option value="f">Female</ion-option>
+                <ion-option value="m">Male</ion-option>
+              </ion-select>
+        </ion-item>
+        <ion-item id="signup-input7">
+            <ion-label>
+              Country
+            </ion-label>
+            <ion-select id="country" >
+                <ion-option>EUA</ion-option>
+                <ion-option>Canadian</ion-option>
+                <ion-option>Ireland</ion-option>
+                <ion-option>UK</ion-option>
+                <ion-option>France</ion-option>
+                <ion-option>Brazil</ion-option>
+              </ion-select>
+        </ion-item>
+      </ion-list>
+      <button id="signup-button" ion-button color="stable" block>
+        Sign up
+      </button>
+    </form>
+  </ion-content>
+
