@@ -34,12 +34,20 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #F9B123,
+  secondary:  #007ba5,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #e74a21,
   dark:       #222
 );
+
+$toolbar-md-title-text-color: map-get($colors, secondary);
+$toolbar-ios-title-text-color: map-get($colors, secondary);
+$toolbar-wp-title-text-color: map-get($colors, secondary);
+
+$menu-md-background: map-get($colors, primary);
+$menu-ios-background: map-get($colors, primary);
+$toolbar-wp-title-text-color: map-get($colors, primary);
 
 
 // App iOS Variables

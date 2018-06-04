@@ -1,35 +1,29 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        Login
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content padding id="page5">
-    <form id="login-form1" autocomplete="off">
-      <ion-list id="login-list1">
-        <ion-item id="login-input1">
-          <ion-label>
-            Email
-          </ion-label>
-          <ion-input autocomplete="off" id="email" type="email" placeholder=""></ion-input>
-        </ion-item>
-        <ion-item id="login-input2">
-          <ion-label>
-            Password
-          </ion-label>
-          <ion-input type="password" id="password" placeholder=""></ion-input>
-        </ion-item>
-      </ion-list>
-      <div class="spacer" style="height:40px;" id="login-spacer1"></div>
-      <button id="login-button1" ion-button color="stable" block>
-        Log in
-      </button>
-      <button id="login-button2" ion-button clear color="positive" block href-inappbrowser="/signup">
-        Or create an account
-      </button>
-    </form>
-  </ion-content>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5">
+  <form id="loginForm" >
+    <ion-item  class="required">
+      <ion-label>
+        Email: <b style="color: red;">*</b>
+      </ion-label>
+      <ion-input type="email" [(ngModel)]="user.email" autofocus name="email" placeholder="" required></ion-input>
+    </ion-item>
+    <ion-item  class="required">
+      <ion-label>
+        Password: <b style="color: red;">*</b>
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="user.password" name="password" placeholder="" required></ion-input>
+    </ion-item>
+    <button  ion-button color="positive" block (click)="logIn()" [disabled]="!checkLoginDisable()">
+      Log in
+    </button>
+  </form>
+</ion-content>

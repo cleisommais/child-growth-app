@@ -1,6 +1,6 @@
 {
   "name": "child-growth-mobile",
-  "app_id": "",
+  "app_id": "123456",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

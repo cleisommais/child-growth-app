@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Add progress
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <ion-item id="addProgress-input18" class="required">
+    <ion-label>
+      Height:
+      <b style="color: red;">*</b>
+    </ion-label>
+    <ion-input type="number" name="height" autofocus [(ngModel)]="progress.height" placeholder=""></ion-input>
+  </ion-item>
+  <ion-item id="addProgress-input19" class="required">
+    <ion-label>
+      Weight:
+      <b style="color: red;">*</b>
+    </ion-label>
+    <ion-input type="number" name="weight" [(ngModel)]="progress.weight" required placeholder=""></ion-input>
+  </ion-item>
+  <ion-item id="addProgress-input20" class="required">
+    <ion-label>
+      Head circumference:
+      <b style="color: red;">*</b>
+    </ion-label>
+    <ion-input type="number" name="headCircumference" [(ngModel)]="progress.headCircumference" required placeholder=""></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Measurement date:
+      <b style="color: red;">*</b>
+    </ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" required [(ngModel)]="progress.dateTrack" required></ion-datetime>
+  </ion-item>
+  <button id="addProgress-button8" ion-button color="positive" block (click)="addProgress()" [disabled]="!checkDisable()">
+    Add progress
+  </button>
+  <button id="addProgress-button9" ion-button color="danger" block (click)="cancel()">
+    Cancel
+  </button>
+</ion-content>

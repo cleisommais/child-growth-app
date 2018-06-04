@@ -1,15 +1,9 @@
 {
   "name": "child-growth-mobile",
   "version": "0.0.1",
-  "description": "To allow users to record the growth and progress of a child on Novartis medication.",
-  "homepage": "http://child-growth.com/",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cleisommais/child-growth-app.git"
-  },
   "author": "Cleison Melo",
-  "license": "MIT",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -32,14 +26,24 @@
     "@ionic-native/status-bar": "4.7.0",
     "@ionic/storage": "2.1.3",
     "chart.js": "^2.7.2",
+    "cordova": "^8.0.0",
+    "cordova-android": "7.0.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
-    "rxjs": "5.5.10",
+    "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.9",
     "typescript": "~2.6.2"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-whitelist": {}
+    }
   }
 }
