@@ -13,6 +13,10 @@ Use the APIs of Git project => https://github.com/cleisommais/child-growth is ne
 Run server inside project folder
 
   `ionic serve`
+  
+Data access
+
+  `email: test@test.com and pass: 1`
 
 
 
