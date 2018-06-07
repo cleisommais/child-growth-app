@@ -4,7 +4,8 @@ import { UserModel } from "../../model/user.model";
 
 @Injectable()
 export class GrowthAccountApiProvider {
-  apiUrl = "http://192.168.0.24:3001";
+  //apiUrl = "http://192.168.0.24:3001";
+  apiUrl = "https://grow-ac.localtunnel.me";
 
   constructor(public http: Http) {
   }

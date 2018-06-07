@@ -3,7 +3,8 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class GrowthLoginApiProvider {
-  apiUrl = "http://192.168.0.24:3000";
+  //apiUrl = "http://localhost:3000";
+  apiUrl = "https://grow-lo.localtunnel.me";
 
   constructor(public http: Http) {
 

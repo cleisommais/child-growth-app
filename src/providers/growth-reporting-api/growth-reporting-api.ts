@@ -5,7 +5,8 @@ import { LoginInterface } from "../../interface/login.interface";
 @Injectable()
 export class GrowthReportingApiProvider {
   login: LoginInterface;
-  apiUrl = "http://192.168.0.24:3002";
+  //apiUrl = "http://192.168.0.24:3002";
+  apiUrl = "https://grow-re.localtunnel.me";
 
   constructor(public http: Http) {
     this.login = JSON.parse(localStorage.getItem("jbb-data"));

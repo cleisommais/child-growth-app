@@ -6,7 +6,8 @@ import { ProgressModel } from "../../model/progress.model";
 @Injectable()
 export class GrowthTrackingApiProvider {
   login: LoginInterface;
-  apiUrl = "http://192.168.0.24:3004";
+  //apiUrl = "http://192.168.0.24:3004";
+  apiUrl = "https://grow-tr.localtunnel.me";
 
   constructor(public http: Http) {
     this.login = JSON.parse(localStorage.getItem("jbb-data"));
